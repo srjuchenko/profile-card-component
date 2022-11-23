@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(229, 23%, 23%);
+}
+
+/* MAIN */
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: url("../images/bg-pattern-card.svg");
+  background-size: 1000%;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.222);
+  text-align: center;
+  width: 325px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card .card__top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 140px;
+  background: url("../images/bg-pattern-card.svg") center center/cover no-repeat;
+  position: relative;
+}
+
+.card .card__img {
+  border-radius: 100%;
+  border: 5px solid #fff;
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card .card__img img {
+  border-radius: 100%;
+}
+
+.card .card__bottom {
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.title {
+  margin-top: 70px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.city {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+hr {
+  margin-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.353);
+}
+.card .card__bottom h1 span {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+.card .card__stats {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card .card__stats ul {
+  display: flex;
+  padding: 0 45px 25px 45px;
+  justify-content: space-between;
+}
+
+.card .card__stats li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .card__stats li span {
+  letter-spacing: 1.2px;
+  margin-top: 5px;
+  font-size: 10px;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 400px) {
+  .card {
+    width: 350px;
+  }
+}
